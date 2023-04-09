@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Header } from "./components/Header";
 
 export default function Home() {
@@ -5,7 +6,7 @@ export default function Home() {
     <div className="min-h-screen bg-marketing-gradient">
       <Header />
       <main className="px-6">
-        <div className="w-full max-w-6xl mx-auto pt-32 flex flex-col items-center justify-center">
+        <div className="w-full max-w-6xl mx-auto pt-32 pb-6 flex flex-col items-center justify-center">
           <span className="px-3 rounded-full h-[28px] flex items-center justify-center text-[12px] font-bold text-[#FB8500] bg-[#FB850026]">
             Cardápio digital
           </span>
@@ -17,18 +18,18 @@ export default function Home() {
             presencial e no online.
           </p>
           <div className="mt-8 flex items-center gap-4">
-            <a
-              href=""
+            <Link
+              href="/"
               className="h-[44px] flex items-center justify-center font-bold rounded-[8px] px-5 text-white bg-[#FB8500]"
             >
               Crie sua conta
-            </a>
-            <a
-              href=""
+            </Link>
+            <Link
+              href="/"
               className="h-[44px] flex items-center justify-center font-bold rounded-[8px] px-5 text-[#023047] bg-[#0230471A]"
             >
               Saiba mais
-            </a>
+            </Link>
           </div>
         </div>
       </main>
