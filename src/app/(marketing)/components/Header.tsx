@@ -1,9 +1,11 @@
+"use client";
+
 import { USER_PAGES } from "@core/routes";
-import { UserCircleIcon } from "@heroicons/react/24/outline";
+import { UserCircle as UserIcon } from "@phosphor-icons/react";
 import Image from "next/image";
 import Link from "next/link";
 
-export const Header = () => (
+const Header = () => (
   <header className="px-6 h-[76px]">
     <div className="w-full h-full max-w-6xl mx-auto flex items-center justify-between">
       <Link href="/">
@@ -28,10 +30,12 @@ export const Header = () => (
           href="/"
           className="ml-3 h-9 px-1.5 flex items-center justify-center rounded-[6px] gap-2 text-sm font-bold text-[#023047]"
         >
-          <UserCircleIcon className="w-5 h-5" />
+          <UserIcon className="w-5 h-5" weight="duotone" />
           Entre
         </Link>
       </nav>
     </div>
   </header>
 );
+
+export default Header;

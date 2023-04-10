@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Header } from "./components/Header";
+import { Header } from "./components";
+import { USER_PAGES } from "@core/routes";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
           </p>
           <div className="mt-8 flex items-center gap-4">
             <Link
-              href="/"
+              href={USER_PAGES.CREATE_ACCOUNT}
               className="h-[44px] flex items-center justify-center font-bold rounded-[8px] px-5 text-white bg-[#FB8500]"
             >
               Crie sua conta
